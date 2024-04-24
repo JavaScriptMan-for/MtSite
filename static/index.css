@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --white: white
+}
+img {
+    width: 300px;
+    height: 300px;
+}
+body {
+    background-color: rgb(51, 49, 49);
+}
+
+a {
+    font-size: 16px;
+    color: #D4D4D8;
+    margin-right: 20px;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    transition: 200ms;
+}
+@media (hover: hover) {
+    a:hover {
+        color: #626266;
+    }
+}
+@media (hover: none) {
+    a:active {
+        color: #626266; 
+    }
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    align-items: center;
+}
+#heshs {
+    margin-left: 100px;
+}
+#logo {
+    margin-top: -30px;
+    position: absolute;
+    width: 80px;
+    height: 70px;
+    align-items: center;
+}
+button {
+    transition: 200ms;
+    font-size: 14px; 
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    color: white;
+    border: none;
+    background-color: #5530F7;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+button#reg {
+    width: 200px;
+    height: 50px;
+}
+@media (hover: hover) {
+    button:hover {
+        background-color: #331b9b;
+    }
+}
+@media (hover: none) {
+    button:active {
+        background-color: #331b9b;
+    }
+}
+.main {
+    margin-top: 100px;
+    margin-left: 170px;
+    margin-bottom: 100px;
+}
+img {
+    width: 200px;
+    height: 150px;
+}
+img[alt] {
+    color: red;
+}
+#cal {
+    width: 20px;
+    height: 25px;
+    margin-right: 10px;
+}
+#mouth, #week-day, #ch, #numb, #th {
+    margin-right: 5px;
+}
+
+h2 {
+    font-size: 20px;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    margin-bottom: 20px;
+}
+h1 {
+    color: #FAFAFA;
+    font-family: "Inter", sans-serif;
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+h3 {
+    font-family: "Inter", sans-serif;
+    color: #D4D4D8;
+    font-size: 20px;
+    line-height: 30px;
+}
+noscript {
+    font-family: "Inter", sans-serif;
+    color: #D4D4D8;
+    font-size: 20px;
+    line-height: 30px;
+}
+#date {
+    color: #FAFAFA;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Space Grotesk", sans-serif;
+}
+button#phone {
+    width: 291px;
+    height: 57px;
+}
+#photo, #prog, #many {
+    width: 35px;
+    height: 40px;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+#portfolio {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.info {
+    margin-right: 30px;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FAFAFA;
+}
+i {
+    color: #A1A1AA;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+}
+td {
+    font-size: 20px;
+    width: 100%;
+    height: fit-content;
+}
+.one {
+    margin-left: 100px;
+}
+.two {
+    margin-left: -100px;
+}
+.content {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+}
+#catalog {
+    display: none;
+    line-height: 10px;
+    color: var(--white);
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    user-select: none;
+    width: 100%
+}
+dialog div {
+   display: flex;
+   flex-direction: column;
+}
+dialog {
+    outline: none;
+    border: 3px solid black;
+    border-radius: 8px;
+    margin-top: -30px;
+    margin-left: 30px;
+    width: fit-content;
+    height: calc(fit-content + 30px);
+    background: linear-gradient(90deg,rgb(124, 116, 116) 10%, rgb(87, 23, 207) 80%);
+    margin-bottom: 0px;
+}
+#close {
+    justify-self: right;
+    color: red;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: -10px;
+}
+dialog a {
+    outline: none;
+}
+@media screen and (max-width: 1100px) {
+    h3 {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    h1 {
+        font-size: 60px;
+    }
+}
+@media screen and (max-width: 860px) {
+    .main {
+        margin-left: 100px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    h3 {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .info {
+        font-size: 14px;
+    }
+    i {
+        font-size: 10px;
+    }
+    button {
+        font-size: 12px;
+    }
+    button#reg {
+        width: 150px;
+    }
+    button#phone {
+        width: 170px;
+    }
+    a {
+        margin-right: 10px;
+    }
+    #heshs {
+        margin-left: 30px;
+    }
+    #logo {
+        margin-left: -50px;
+    }
+}
+@media screen and (max-width: 660px) {
+    .main {
+        margin-left: 40px;
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 616px) {
+    .nav {
+        justify-content: left;
+    }
+    #logo {
+        margin-left: 20px;
+        position: static;
+    }
+    .main {
+        margin-top: 30px;
+    }
+    #photo {
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 462px) {
+    #portfolio {
+        margin-left: 100px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: 100%;
+    }
+    #photo {
+        margin-left: 0px;
+    }
+
+    #photo, #prog, #many {
+    margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 380px) {
+    #portfolio {
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 294px) {
+    h1 {
+        font-size: 30px;
+    }
+  
+    #cal {
+        width: 17px;
+        height: 25px;
+    }
+
+    h3 {
+        font-size: 7px;
+        line-height: 10px;
+    }
+    .info {
+        font-size: 8px;
+    }
+    i {
+        font-size: 5px;
+    }
+    .main {
+        margin-left: 20px;
+    }
+    #mouth, #week-day, #ch, #numb, #th {
+      font-size: 10px;
+    }
+    button#phone {
+        width: 90px;
+    }
+    #portfolio {
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 180px) {
+.main {
+    margin-left: 3px;
+}
+#mouth, #week-day, #ch, #numb, #th {
+   font-size: 7px;
+   margin-right: 5px;
+  }
+  #cal {
+    width: 10px;
+    height: 20px;
+  }
+}
