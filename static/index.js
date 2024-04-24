@@ -63,6 +63,7 @@ document.querySelector('#reg').addEventListener('click', () => {
 })
 setInterval(()=>{
     if(window.innerWidth >= 617) {
+        document.querySelector('#logo').style.cssText = `margin-top: -30px`
         document.querySelector('dialog').close();
         document.querySelector('#heshs').style.cssText = `display: inline-block`;
         document.querySelector('#catalog').style.cssText = `display: none`

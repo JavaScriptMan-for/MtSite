@@ -1,11 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Обо мне</title>
+    <link rel="stylesheet" href="about_us.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    
+    <dialog id="hreshs">
+        <div>
+            <span id="close">✕</span>
+            <a href="/">Дом</a> <a href="about_us.html">Обо мне</a> 
+            <a href="my_projects.html">Мои проекты</a> <a href="reg.html">Войти</a>
+        </div>
+    </dialog>
+    <div role="navigation" class="nav">
+        <a href="/"><img id="logo" src="img/favicon.ico" alt="Логотип"></a>
+        <div id="catalog">— <br> — <br> —</div>
+        <div id="heshs">
+            <a class="navigathion" href="/">Главная страница</a>
+            <a class="navigathion" href="about_us.html">Обо мне</a>
+            <a class="navigathion" href="my_projects.html">Мои проекты</a>
+            <button id="reg" type="button">Зарегестрироваться</button>
+        </div>
+    </div>
+    <script src="about_us.js"></script>
 </body>
 </html>
