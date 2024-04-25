@@ -33,3 +33,7 @@ app.get(pages.my_projects, (req,res)=> {
 app.get(pages.reg, (req,res)=>{
  res.sendFile(path.join(__dirname, '/reg.html'));
      }) 
+app.all('*', (req, res) => { 
+        res.status(404)
+        res.sendFile(path.join(__dirname, '/error.html'))
+     }); 
