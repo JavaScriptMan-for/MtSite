@@ -59,6 +59,13 @@ button {
     background-color: #5530F7;
     border-radius: 8px;
     text-transform: uppercase;
+    cursor: pointer;
+}
+noscript {
+    font-family: "Inter", sans-serif;
+    color: #D4D4D8;
+    font-size: 20px;
+    line-height: 30px;
 }
 button#reg {
     width: 200px;
@@ -109,9 +116,200 @@ dialog {
 dialog a {
     outline: none;
 }
+.main {
+    margin-top: 100px;
+    margin-left: 20px;
+}
+#inform {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+   margin-bottom: 10px;
+   line-height: 25px;
+}
+
+b {
+    font-family: "Inter", sans-serif;
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+}
+i {
+    color: #A1A1AA;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+}
+#text {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(106, 24, 236);
+    font-family: "Inter", sans-serif;
+}
+abbr {
+    text-decoration: none;
+    border: none;
+    color: rgb(101, 36, 204);
+    cursor: pointer;
+}
+
+.h {
+    color: white;
+    font-weight: bolder;
+    font-family: "Inter", sans-serif;
+    margin-right: 40px;
+}
+
+.val {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: rgb(177, 11, 243);
+}
+.val * {
+    color: rgb(177, 11, 243);
+}
+.val a {
+    border-bottom: 2px solid rgb(177, 11, 243);
+}
+.projects {
+    margin-top: 150px;
+   display: flex;
+   flex-direction: row; 
+   justify-content: center;
+}
+.projects p {
+    margin-right: 20px;
+}
+#pr_compl {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    color: orange;
+    font-size: 40px;
+    font-weight: bold;
+}
+#opit {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    color: purple;
+    font-size: 40px;
+    font-weight: bold;
+}
+#clients {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    color: blue;
+    font-size: 40px;
+    font-weight: bold;
+}
+#run {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    color: green;
+    font-size: 40px;
+    font-weight: bold;
+}
+.projects i {
+    font-size: 20px;
+}
+@media (hover: hover) {
+    .val a:hover {
+       color: rgb(150, 42, 192);
+    }
+}
+@media (hover: none) {
+    .val a:active {
+        color: rgb(150, 42, 192);
+     }
+}
+.skill {
+    margin-top: 100px;
+    display: grid;
+}
+h1 {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: "Inter", sans-serif;
+    color: #ddddff;
+    font-size: 40px;
+    border-bottom: 2px solid rgb(177, 11, 243);
+    width: fit-content;
+    justify-self: center;
+    margin-bottom: 100px;
+}
+.skill p {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(106, 24, 236);
+    font-family: "Inter", sans-serif;
+}
+.art  {
+    width: 100%;
+}
+.art p {
+    margin: 0
+}
+#vue, #js, #htcss, #react, #express {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#react .name-teh{
+    margin-right: 350px;
+}
+#vue .name-teh  {
+    margin-right: 365px;
+}
+#express .name-teh {
+    margin-right: 335px;
+}
+svg {
+    margin-top: 60px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.tehn {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+.f {
+    margin-top: 20px;
+}
+.name-teh {
+    margin-left: -40px;
+    justify-self: left;
+    margin-right: 300px;
+}
+
+#ab_me {
+    margin-top: 100px;
+}
+#ab_me h1 {
+   margin-bottom: 0px;
+}
+#ab_me p {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(106, 24, 236);
+    font-family: "Inter", sans-serif;
+}
 @media screen and (max-width: 616px) {
     #logo {
         margin-left: 20px;
         position: static;
     }
+}
+@media screen and (max-width: 1000px) {
+    .projects * {
+        line-height: 30px;
+    }
+}
+@media screen and (max-width: 530px) {
+  
+   .art {
+    margin-left: 0px;
+   }
 }

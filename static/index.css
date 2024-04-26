@@ -60,7 +60,9 @@ button {
     background-color: #5530F7;
     border-radius: 8px;
     text-transform: uppercase;
+    cursor: pointer;
 }
+
 button#reg {
     width: 200px;
     height: 50px;

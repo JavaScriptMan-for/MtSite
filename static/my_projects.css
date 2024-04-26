@@ -59,6 +59,7 @@ button {
     background-color: #5530F7;
     border-radius: 8px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 button#reg {
     width: 200px;
@@ -73,6 +74,12 @@ button#reg {
     button:active {
         background-color: #331b9b;
     }
+}
+noscript {
+    font-family: "Inter", sans-serif;
+    color: #D4D4D8;
+    font-size: 20px;
+    line-height: 30px;
 }
 #catalog {
     display: none;

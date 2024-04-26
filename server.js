@@ -24,6 +24,10 @@ app.use(express.static(__dirname + "/fonts"))
 app.get(pages.main, (req,res)=> {
  res.sendFile(path.join(__dirname, '/index.html')) ;
      })
+app.get("/index.html", (req,res)=> {
+        res.sendFile(path.join(__dirname, '/index.html')) ;
+        res.redirect('/');
+            })
 app.get(pages.about_us, (req,res)=> {
  res.sendFile(path.join(__dirname, '/about_us.html')); 
      })
@@ -33,7 +37,7 @@ app.get(pages.my_projects, (req,res)=> {
 app.get(pages.reg, (req,res)=>{
  res.sendFile(path.join(__dirname, '/reg.html'));
      }) 
-app.all('*', (req, res) => { 
+app.get('*', (req, res) => { 
         res.status(404)
         res.sendFile(path.join(__dirname, '/error.html'))
      }); 
