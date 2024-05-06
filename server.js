@@ -52,6 +52,7 @@ app.get('*', (req, res) => {
         res.status(404)
         res.sendFile(path.join(__dirname, '/error.html'))
      }); 
+     
 app.post(pages.my_projects, urlencodedParser, (req, res)=> {
     if(!req.body) return res.sendStatus(400);
  rest.title = req.body.title;

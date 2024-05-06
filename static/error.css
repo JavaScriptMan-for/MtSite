@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Over+the+Rainbow&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Over+the+Rainbow&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+body {
+    background: -webkit-linear-gradient(90deg, #51234e,#661384,#5813ca);
+    background: linear-gradient(90deg, #51234e,#661384,#5813ca);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90vh;
+}
+h1 * {
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: 100px;
+    font-family: "Lilita One", sans-serif;
+    margin: 0;
+}
+h1 {
+    margin-bottom: 50px;
+}
+h2 {
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: 50px;
+    font-family: "Over the Rainbow", sans-serif;
+    margin-bottom: 0px;
+}
+h3 {
+    margin-top: 0px;
+    font-family: "Lilita One", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+}
+i {
+    color: #A1A1AA;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+}
+a {
+    font-size: 16px;
+    color: #D4D4D8;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    transition: 200ms;
+    border-bottom: 1px solid #D4D4D8;
+   width: fit-content;
+}
+@media (hover: hover) {
+    a:hover {
+        color: #626266;
+        border-color: #626266;
+    }
+}
+@media (hover: none) {
+    a:active {
+        color: #626266; 
+        border-color: #626266;
+    }
+}
+ul {
+    list-style-type: none
+}
+span {
+    position: absolute;
+}
+#e_1 {
+    transition: 200ms ease-in-out;
+    animation: err_1 infinite 5s;
+    animation-fill-mode: forwards;
+    margin-left: -100px;
+}
+#e_2 {
+    transition: 200ms ease-in-out;
+    animation: err_2 infinite 5s;
+    animation-fill-mode: forwards;
+    margin-left: -25px;
+
+}
+#e_3 {
+    transition: 200ms ease-in-out;
+    animation: err_3 infinite 5s;
+    animation-fill-mode: forwards;
+    margin-left: 65px;
+}
+@keyframes err_1 {
+
+    50% {
+       transform: translate(0px, 10px);
+    }
+    70% {
+        transform: translate(0px, -2px);
+    }
+    90% {
+        transform: translate(0px, -3px);
+    }
+    100% {
+        transform: translate(0px, -5px);
+    }
+}
+@keyframes err_2 {
+ 
+    50% {
+        transform: translate(0px, -10px);
+    }
+    70% {
+        transform: translate(0px, 5px);
+    }
+    90% {
+        transform: translate(0px, 3px);
+    }
+    100% {
+        transform: translate(0px, 2px);
+    }
+}
+@keyframes err_3 {
+
+    50% {
+       transform: translate(0px, 10px);
+    }
+    70% {
+        transform: translate(0px, -2px);
+    }
+    90% {
+        transform: translate(0px, -3px);
+    }
+    100% {
+        transform: translate(0px, -5px);
+    }
+}
+@media screen and (max-width: 305px) {
+    #e_1 {
+        margin-left: 20px;
+    }
+    #e_2 {
+        transition: 200ms ease-in-out;
+        animation: err_2 infinite 5s;
+        animation-fill-mode: forwards;
+        margin-left: 60px;
+    
+    }
+    #e_3 {
+        transition: 200ms ease-in-out;
+        animation: err_3 infinite 5s;
+        animation-fill-mode: forwards;
+        margin-left: 105px;
+    }
+    h1 * {
+        font-size: 70px;
+        font-family: "Lilita One", sans-serif;
+    }
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 10px;
+    }
+    body {
+        align-items: flex-start;
+        text-align: left;
+    }
+    ul li {
+        margin-left: -40px;
+    }
+    a {
+        font-size: 10px;
+        border-bottom: 0.5px solid #D4D4D8;
+    }
+    i {
+        font-size: 10px;
+      }
+}
+@media screen and (max-width: 240px) {
+    i {
+        font-size: 7px;
+    }
+}
+@media screen and (max-width: 200px) {
+    #e_1 {
+        margin-left: 10px;
+    }
+    #e_2 {
+        transition: 200ms ease-in-out;
+        animation: err_2 infinite 5s;
+        animation-fill-mode: forwards;
+        margin-left: 40px;
+    
+    }
+    #e_3 {
+        transition: 200ms ease-in-out;
+        animation: err_3 infinite 5s;
+        animation-fill-mode: forwards;
+        margin-left: 75px;
+    }
+    h1 * {
+        font-size: 50px;
+        font-family: "Lilita One", sans-serif;
+    }
+}
+@media screen and (max-width: 133px) {
+   a {
+    border: none;
+   } 
+}
+@media screen and (max-width: 135px) {
+    #e_1 {
+        margin-left: 2px;
+    }
+    #e_2 {
+        transition: 200ms ease-in-out;
+        animation: err_2 infinite 5s;
+        animation-fill-mode: forwards;
+        margin-left: 20px;
+    
+    }
+    #e_3 {
+        transition: 200ms ease-in-out;
+        animation: err_3 infinite 5s;
+        animation-fill-mode: forwards;
+        margin-left: 45px;
+    }
+    h1 * {
+        font-size: 35px;
+        font-family: "Lilita One", sans-serif;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    h3 {
+        font-size: 5px;
+    }
+}
