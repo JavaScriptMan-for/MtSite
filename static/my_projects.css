@@ -116,6 +116,157 @@ dialog {
 dialog a {
     outline: none;
 }
+
+h1 {
+    color: #FAFAFA;
+    font-family: "Inter", sans-serif;
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+i {
+    color: #A1A1AA;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    font-weight: bolder;
+}
+#text {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1.5fr);
+}
+#projects div {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 15px;
+    border: 4px solid white;
+    border-radius: 8px;
+    filter: contrast(0.9);
+    width: 2fr;
+    height: 300px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 200ms;
+}
+@media (hover: hover) {
+    #projects div:hover {
+        opacity: 0.7;
+        border: 4px solid rgb(87, 23, 207);
+    }
+}
+@media (hover: none) {
+    #projects div:active {
+        opacity: 0.7;
+        border: 4px solid rgb(87, 23, 207);
+        
+    }
+}
+
+
+#vacuum-cleaner {
+    background-image: url("../img/prew_1.jpg");
+    background-size: cover;
+}
+#drive {
+    background-image: url("../img/drive.png");
+    background-size: cover;
+}
+#calc {
+    background-image: url("../img/c.png");
+    background-size: cover;
+    background-position: center;
+}
+#kras_banya {
+    background-image: url("../img/banya.png");
+    background-size: cover;
+    background-position: center;
+}
+h2 {
+    font-family: "Inter", sans-serif;
+    color: #5530F7;
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: bolder;
+}
+.add {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.add dialog {
+    justify-self: center;
+}
+#get {
+    width: 100px;
+    height: 70px;
+    font-size: 30px;
+}
+dialog {
+    margin-top: 100px;
+    background-color: #5530F7;
+    width: 300px;
+    height: calc(fit-content + 20px);
+}
+#file_go {
+display: none;
+}
+dialog form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form input {
+    margin-bottom: 20px;
+    width: 200px;
+    outline: none;
+}
+label {
+    margin-bottom: 20px;
+    transition: 200ms;
+    font-size: 14px; 
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    color: white;
+    border: none;
+    background-color: #5530F7;
+    border-radius: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+label button {
+    width: 100px;
+    height: 70px;
+}
+form input:first-child {
+    margin-top: 20px;
+}
+@media (hover: hover) {
+    label:hover {
+        background-color: #331b9b;
+    }
+}
+@media (hover: none) {
+    label:active {
+        background-color: #331b9b;
+    }
+}
 @media screen and (max-width: 616px) {
     #logo {
         margin-left: 20px;

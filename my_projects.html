@@ -6,6 +6,7 @@
     <title>Мои проекты</title>
     <link rel="stylesheet" href="my_projects.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="/socket.io/socket.io.js"></script>
 </head>
 <body>
     <dialog id="hreshs">
@@ -23,6 +24,48 @@
             <a class="navigathion" href="about_us.html">Обо мне</a>
             <a class="navigathion" href="my_projects.html">Мои проекты</a>
             <button id="reg" type="button">Зарегестрироваться</button>
+        </div>
+    </div>
+    <div class="main">
+        <div id="text">
+            <h1>Список всех проектов</h1> 
+            <i>Нажав на проект вы сразу же перенаправитесь на него!</i>
+        </div>
+        <div id="projects">
+            <div class="coulm" id="vacuum-cleaner">
+                <h2>The Evil Vacuum Cleaner</h2>
+                <i>Игра про моего друга и пылесосы</i>
+            </div>
+
+            <div class="coulm" id="drive">
+                <h2>Гонки</h2>
+                <i>Едешь на машине и уворачиваешься от препятствий</i>
+            </div>
+
+            <div class="coulm" id="calc">
+                <h2>Калькулятор для преферанса</h2>
+                <i>Калькулятор считает кто выиграл в игре</i>
+            </div>
+
+            <div class="coulm" id="kras_banya">
+                <h2>Баня</h2>
+                <i>Сайт-реклама бани</i>
+            </div>
+        </div>
+        <div class="add">
+            <button id="get">+</button>
+            <dialog id="post">
+                <form method="post" action="/my_projects.html">
+                    <input name="title" type="text" placeholder="Название..."> 
+                    <input name="subtitle" type="text" placeholder="Описание...">
+                    <input type="text" name="href" placeholder="Ссылка...">
+                    <label for="file_go">
+                        <input name="file" id="file_go" type="file" placeholder="Обложка...">
+                        <span>Загрузить фото...</span>
+                    </label>
+                    <input id="subm" type="submit" value="Отправить">
+                </form>
+            </dialog>
         </div>
     </div>
     <noscript>Пожайлуста, включите JavaScript в вашем браузере! Без него сайт не будет правильно функционировать!</noscript>

@@ -5,8 +5,10 @@ require('dotenv').config();
 
 const express = require('express');
 const app = express();
+const socketIO = require('socket.io');
 
-http.createServer(app).listen(process.env.PORT)
+
+const server = http.createServer(app).listen(process.env.PORT)
 
 let pages = {
     main: "/",
@@ -15,6 +17,15 @@ let pages = {
     reg: "/reg.html",
     err: "/error.html"
 }
+let posts = []
+const urlencodedParser = express.urlencoded({extended: false});
+let rest = {
+    title: "",
+    subtitle: "",
+    img: "",
+    href: ""
+};
+const io = socketIO(server)
 
 app.use('/img', express.static(__dirname + '/img'))
 app.use(express.static(__dirname + "/static"))
@@ -41,3 +52,18 @@ app.get('*', (req, res) => {
         res.status(404)
         res.sendFile(path.join(__dirname, '/error.html'))
      }); 
+app.post(pages.my_projects, urlencodedParser, (req, res)=> {
+    if(!req.body) return res.sendStatus(400);
+ rest.title = req.body.title;
+ rest.subtitle = req.body.subtitle;
+ rest.img = req.body.file;
+ rest.href = req.body.href
+    res.sendFile(path.join(__dirname, '/my_projects.html'))
+    posts.push(rest)
+    io.on('connection', (socket)=>{
+        socket.emit('new_post', posts)
+     })
+     })
+    
+
+ 
